@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description" content="Site de notícias e eventos sobre templos dedicados e anunciados">
+    <meta name="author" content="Roberto Ferreira da Rocha">
+    <meta name="image" content="imagens/logo.png">
+    <meta name="url" content="https://robertoferreirarocha.github.io/">
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <script src="scripts/data.js" defer></script>
+
+
+
+
+</head>
+<body>
+    <header>
+        <img src="imagens/logo.png" alt="Logo do site" id="logo">
+        <span>Roberto Ferreira da Rocha</span>
+        <button id="bmenu">
+            <span class="icono_hamburguer"></span>
+        </button>
+
+    </header>
+
+    <nav>
+        <h1> WDD 231: Desenvolvimento Frontend para Web I</h1>
+
+        <div class="grade-superior">
+            <section class="cartao">
+                <h2>Sobre Mim</h2>
+                <div class="conteudo-sobre">
+                    <p>Meu nome é Roberto Ferreira da Rocha, e sou estudante de Desenvolvimento Frontend para Web I.</p>
+                </div>
+            </section>
+
+            <section class="cartao">
+            <h2>Pernambuco, Brasil</h2>
+            <div class="conteudo-local">
+                <!-- Uma imagem representativa da sua região otimizada (max 125kb) -->
+                <img src="imagens/recife.webp" alt="Paisagem de Pernambuco" width="300">
+                <p>Trabalhando e desenvolvendo aplicações a partir da região metropolitana.</p>
+            </div>
+        </section>
+    
+
+        <!-- SEÇÃO 3: Certificados e Cursos -->
+        <section class="cartao-cursos">
+            <h2>Certificado de Programação Web</h2>
+            
+            <!-- Botões de filtro exigidos pela atividade -->
+            <div class="botoes-filtro">
+                <button id="btn-todos">Todos</button>
+                <button id="btn-cse">CSE</button>
+                <button id="btn-wdd">WDD</button>
+            </div>
+
+            <!-- Esta div vazia é onde o JavaScript vai injetar os cartões de curso -->
+            <div id="lista-cursos"></div>
+
+            <!-- Espaço reservado para a soma dos créditos dinamicamente -->
+            <p id="total-creditos-texto">Total de Créditos: <span id="creditos">0</span></p>
+        </section>
+        
+    </main> 
+
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> - Roberto Rocha | Pernambuco | Brasil</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+
+
+</body>
+</html>

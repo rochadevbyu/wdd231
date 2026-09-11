@@ -1,0 +1,7 @@
+.navegacao {
+    display: none;
+}
+
+.navegacao.exibir {
+    display: block;
+}
