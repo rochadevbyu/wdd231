@@ -3,3 +3,88 @@
     box-sizing: border-box;
     
 }
+
+/* Organiza o cabeçalho */
+header {
+    display: grid;
+    grid-template-columns: 50px auto 50px; /* Espaço para logo, texto e botão */
+    align-items: center;
+    padding: 1rem;
+    background-color: #003366; /* Exemplo de cor, mude para a sua */
+    color: white;
+}
+
+/* Esconde o menu por padrão no mobile */
+nav {
+    display: none;
+}
+
+/* Mostra o menu quando o botão hambúrguer é clicado (via JS) */
+nav.exibir {
+    display: block;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Layout da grade de cursos */
+#lista-cursos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+/* Estilo padrão do cartão de curso */
+.curso-card {
+    background-color: #f4f4f4; /* Fundo cinza claro */
+    padding: 15px 30px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Estilo para destacar os cursos concluídos */
+.curso-card.concluido {
+    background-color: #d4edda; /* Fundo verde claro */
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* Estilo básico dos botões de filtro */
+.botoes-filtro button {
+    padding: 10px 15px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: #003366;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+footer {
+    background-color: #003366; /* Fundo azul escuro */
+    color: white;
+    text-align: center; /* Centraliza os textos */
+    padding: 25px 10px;
+    margin-top: 40px;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: center; /* Centraliza os ícones */
+    gap: 20px; /* Espaço entre eles */
+    margin-bottom: 20px;
+}
+
+/* Limita o tamanho do logotipo para caber no cabeçalho */
+#logo {
+    width: 100%;
+    max-width: 50px; /* Trava o tamanho máximo */
+    height: auto; /* Mantém a proporção sem distorcer */
+}

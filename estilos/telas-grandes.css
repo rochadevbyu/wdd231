@@ -1,0 +1,64 @@
+/* Tudo dentro desta Media Query só funciona em telas maiores que 768px */
+@media (min-width: 768px) {
+    
+    /* 1. Esconde o botão hambúrguer no desktop */
+    #bmenu {
+        display: none;
+    }
+
+    /* 2. Garante que o menu sempre apareça e usa Flexbox */
+    nav {
+        display: block; /* Sobrescreve o display:none do telas-pequenas */
+    }
+    
+    nav ul {
+        display: flex; /* Coloca os links lado a lado */
+        justify-content: center; /* Centraliza os itens */
+        background-color: #002244; /* Cor de fundo do menu */
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 15px 30px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    /* Wayfinding: Destaca a página atual e efeito Hover */
+    nav ul li a.atual {
+        background-color: #00509e; /* Cor mais clara para indicar onde o usuário está */
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        background-color: #003366;
+    }
+
+    /* 3. Tira o design de "uma coluna só" (Rubrica: Layout da Página) */
+    .grade-superior {
+        display: grid;
+        grid-template-columns: 2fr 1fr; /* A primeira seção fica mais larga que a segunda */
+        gap: 20px;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 0 auto; /* Centraliza o conteúdo na tela */
+    }
+
+    .cartao, .cartao-cursos {
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Ajuste para a seção de cursos ocupar a largura toda embaixo */
+    .cartao-cursos {
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+}
