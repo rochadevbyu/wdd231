@@ -3,17 +3,14 @@ const btnGrade = document.querySelector('#btn-grade');
 const btnLista = document.querySelector('#btn-lista');
 
 const exibirMembros = (membros) => {
-    blocoEmpresas.innerHTML = ''; 
+    blocoEmpresas.innerHTML = '';
 
     membros.forEach((membro) => {
         let cartao = document.createElement('section');
         let nome = document.createElement('h3');
         let endereco = document.createElement('p');
-        let telefone = document.createElement('p');
-        
-        
-        let nivel = document.createElement('p'); 
-        
+        let telefone = document.createElement('p');   
+        let nivel = document.createElement('p');       
         let imagem = document.createElement('img');
         let site = document.createElement('a');
 
@@ -47,10 +44,7 @@ const exibirMembros = (membros) => {
         cartao.appendChild(nome);
         cartao.appendChild(endereco);
         cartao.appendChild(telefone);
-        
-        
         cartao.appendChild(nivel); 
-        
         cartao.appendChild(site);
 
         blocoEmpresas.appendChild(cartao);
@@ -68,7 +62,6 @@ async function getMembros() {
     }
 }
 
-
 btnGrade.addEventListener('click', () => {
     blocoEmpresas.classList.remove('list');
 });
@@ -76,6 +69,5 @@ btnGrade.addEventListener('click', () => {
 btnLista.addEventListener('click', () => {
     blocoEmpresas.classList.add('list');
 });
-
 
 getMembros();

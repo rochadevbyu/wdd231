@@ -1,17 +1,9 @@
-
 :root {
     --cor-fundo: #f4f4f9;
-    --cor-texto: #333333;
-    
-    /* Azul: Céu limpo e claro da cidade */
-    --cor-primaria: #005B96; 
-    
-    /* Verde: Força da Mata Atlântica */
+    --cor-texto: #333333;   
+    --cor-primaria: #005B96;    
     --cor-secundaria: #1b6e1b; 
-    
-    /* Vermelho: Fé, paz e destaque */
     --cor-destaque: #D32F2F; 
-    
     --cor-fundo-cartao: #ffffff;
     --fonte-principal: 'Roboto', sans-serif;
 }
@@ -29,14 +21,12 @@ body {
     line-height: 1.6;
 }
 
-
 header {
     background-color: var(--cor-primaria);
-    color: white;
+    color: #ffffff;
     padding: 1.5rem;
     text-align: center;
 }
-
 
 nav {
     background-color: var(--cor-secundaria);
@@ -55,10 +45,9 @@ nav ul li a {
     color: white;
     text-decoration: none;
     text-align: center;
-    border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-bottom: 1px solid #ffffff33;
     transition: background-color 0.3s;
 }
-
 
 nav ul li a:hover {
     background-color: var(--cor-destaque);
@@ -72,7 +61,6 @@ footer {
     padding: 2rem 1rem;
     margin-top: 2rem;
 }
-
 
 .menu-visualizacao {
     text-align: center;
@@ -95,13 +83,11 @@ footer {
     background-color: var(--cor-destaque);
 }
 
-
 main {
     padding: 0 1rem;
     max-width: 1200px;
     margin: 0 auto;
 }
-
 
 #cartoes {
     display: grid;
@@ -110,14 +96,13 @@ main {
     align-items: stretch; 
 }
 
-
 #cartoes section {
     background-color: var(--cor-fundo-cartao);
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1.5rem;
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px #0000001a;
     transition: transform 0.3s ease;
     
     
@@ -126,7 +111,6 @@ main {
     justify-content: space-between;
     height: 100%; 
 }
-
 
 #cartoes section img {
     width: 100%;
@@ -165,7 +149,6 @@ main {
     align-items: flex-start;
     text-align: left;
 }
-
 
 .cabecalho-topo {
     display: flex;
