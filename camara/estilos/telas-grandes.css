@@ -29,7 +29,7 @@
 
     #cartoes.list section {
     display: grid;
-    grid-template-columns: 1.5fr 2fr 1fr 1fr 150px; /* Eram 6 colunas, agora são 5 */
+    grid-template-columns: 1.5fr 2fr 1fr 1fr 150px;
     gap: 1rem;
     align-items: center; 
     text-align: left;

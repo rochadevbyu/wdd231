@@ -51,7 +51,6 @@ const exibirMembros = (membros) => {
     });
 }
 
-
 async function getMembros() {
     try {
         const resposta = await fetch('dados/membros.json');

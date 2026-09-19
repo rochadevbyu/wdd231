@@ -108,9 +108,7 @@ main {
     padding: 1.5rem;
     text-align: center;
     box-shadow: 0 2px 5px #0000001a;
-    transition: transform 0.3s ease;
-    
-    
+    transition: transform 0.3s ease; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -141,7 +139,6 @@ main {
 #cartoes section a:hover {
     text-decoration: underline;
 }
-
 
 #cartoes.list {
     display: flex;
