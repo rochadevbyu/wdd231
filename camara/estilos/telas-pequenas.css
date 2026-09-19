@@ -42,7 +42,7 @@ nav ul {
 nav ul li a {
     display: block;
     padding: 1rem;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     text-align: center;
     border-bottom: 1px solid #ffffff33;
@@ -50,18 +50,18 @@ nav ul li a {
 }
 
 nav ul li a.ativo {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: #00000033;
     font-weight: bold;
 }
 
 nav ul li a:hover {
     background-color: var(--cor-destaque);
-    color: white;
+    color: #ffffff;
 }
 
 footer {
     background-color: var(--cor-primaria);
-    color: white;
+    color: #ffffff;
     text-align: center;
     padding: 2rem 1rem;
     margin-top: 2rem;
@@ -77,7 +77,7 @@ footer {
     margin: 0 0.5rem;
     font-size: 1rem;
     background-color: var(--cor-secundaria);
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
