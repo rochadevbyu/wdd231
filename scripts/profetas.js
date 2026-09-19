@@ -4,12 +4,14 @@ const cartoes = document.querySelector('#cartoes');
 async function obterDadosDeProfetas() {
   const resposta = await fetch(url);
   const dados = await resposta.json();
-  // console.table(dados.profetas); // Descomente para testar no console
+  console.table(dados.profetas); // Descomente para testar no console
   exibirProfetas(dados.profetas);
 }
 
+
+
 const exibirProfetas = (profetas) => {
-  profetas.forEach((profeta) => {
+  profetas.forEach((profeta) => {  
     // 1. Cria elementos para adicionar ao elemento div.cartoes
     let cartao = document.createElement('section');
     let nomeCompleto = document.createElement('h2'); // Preenchido: h2
@@ -18,13 +20,13 @@ const exibirProfetas = (profetas) => {
     let retrato = document.createElement('img');
 
     // 2. Cria o conteúdo de texto para mostrar as informações
-    nomeCompleto.textContent = `${profeta.nome} ${profeta.sobrenome}`; // Preenchido
-    dataNascimento.textContent = `Data de Nascimento: ${profeta.dataNascimento}`;
-    localNascimento.textContent = `Local de Nascimento: ${profeta.localNascimento}`;
+    nomeCompleto.textContent = `${profeta.name} ${profeta.lastname}`; // Trocado para name e lastname
+    dataNascimento.textContent = `Data de Nascimento: ${profeta.birthdate}`; // Trocado para birthdate
+    localNascimento.textContent = `Local de Nascimento: ${profeta.birthplace}`; // Trocado para birthplace
 
     // 3. Cria o retrato definindo todos os atributos relevantes
-    retrato.setAttribute('src', profeta.urlImagem);
-    retrato.setAttribute('alt', `Retrato de ${profeta.nome} ${profeta.sobrenome}`); // Preenchido
+    retrato.setAttribute('src', profeta.imageurl); // Trocado para imageurl
+    retrato.setAttribute('alt', `Retrato de ${profeta.name} ${profeta.lastname}`); // Trocado para name e lastname    
     retrato.setAttribute('loading', 'lazy');
     retrato.setAttribute('width', '340');
     retrato.setAttribute('height', '440');

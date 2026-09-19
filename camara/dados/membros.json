@@ -1,0 +1,84 @@
+[
+  {
+    "nome": "Casas Bahia",
+    "endereco": "Rua Belmiro Correia, 1809, Bairro Novo do Carmelo",
+    "telefone": "0800 200 4336",
+    "website": "https://www.casasbahia.com",
+    "imagem": "casas-bahia.webp",
+    "nivel_associacao": 3,
+    "ano_fundacao": 1946
+  },
+  {
+    "nome": "Assaí Atacadista",
+    "endereco": "Avenida Doutor Belmino Correia, 681, Centro, Camaragibe - PE",
+    "telefone": "(81) 3456-8952",
+    "website": "https://www.assai.com.br",
+    "imagem": "assai.webp",
+    "nivel_associacao": 3,
+    "ano_fundacao": 1974
+  },
+  {
+    "nome": "Novo Atacarejo",
+    "endereco": "Av. Dr. Belmino Correia, 2816 - Timbi",
+    "telefone": "(81) 3050-0100",
+    "website": "https://www.novoatacarejo.com.br",
+    "imagem": "novo-atacarejo.webp",
+    "nivel_associacao": 3,
+    "ano_fundacao": 2019
+  },
+  {    
+    "nome": "Óticas Diniz",
+    "endereco": "Av. Dr. Belmino Correia, 1553 - Centro",
+    "telefone": "(81) 3458-2020",
+    "website": "https://www.oticasdiniz.com.br",
+    "imagem": "otica-diniz.webp",
+    "nivel_associacao": 1,
+    "ano_fundacao": 1992
+  },
+  {
+    "nome": "Lojas Americanas",
+    "endereco": "Avenida Doutor Belmino Correia, 2263, Centro, Camaragibe - PE",
+    "telefone": "(81) 4003-4848",
+    "website": "https://www.americanas.com.br",
+    "imagem": "lojas-americanas.webp",
+    "nivel_associacao": 3,
+    "ano_fundacao": 1929
+  },
+  {
+    "nome": "Farmácias Pague Menos",
+    "endereco": "Av. Dr. Belmino Correia, 475, Centro, Camaragibe - PE",
+    "telefone": "(81) 3458-9999",
+    "website": "https://www.paguemenos.com.br",
+    "imagem": "paguemenos.webp",
+    "nivel_associacao": 1,
+    "ano_fundacao": 1981
+  },
+  {
+    "nome": "Drogasil",
+    "endereco": "Av. Dr. Belmino Correia, 1792, Centro, Camaragibe - PE",
+    "telefone": "(81) 3000-1111",
+    "website": "https://www.drogasil.com.br",
+    "imagem": "drogasil.webp",
+    "nivel_associacao": 1,
+    "ano_fundacao": 1935
+  },
+  {
+    "nome": "Camará Shopping",
+    "endereco": "R. Manoel Honorato da Costa, 555, Vila da Inês, Camaragibe - PE",
+    "telefone": "(81) 3050-9850",
+    "website": "https://www.camarashopping.com.br",
+    "imagem": "camara.webp",
+    "nivel_associacao": 3,
+    "ano_fundacao": 2018
+  }
+  ,
+  {
+    "nome": "Supermercado Arco-Mix",
+    "endereco": "Av. Dr. Belmino Correia, 1145 - Bairro Novo do Carmelo",
+    "telefone": "(81) 3458-1122",
+    "website": "https://www.arcomix.com.br",
+    "imagem": "arcomix.webp",
+    "nivel_associacao": 2,
+    "ano_fundacao": 1981
+  }
+]

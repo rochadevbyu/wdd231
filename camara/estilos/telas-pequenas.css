@@ -1,0 +1,189 @@
+
+:root {
+    --cor-fundo: #f4f4f9;
+    --cor-texto: #333333;
+    
+    /* Azul: Céu limpo e claro da cidade */
+    --cor-primaria: #005B96; 
+    
+    /* Verde: Força da Mata Atlântica */
+    --cor-secundaria: #228B22; 
+    
+    /* Vermelho: Fé, paz e destaque */
+    --cor-destaque: #D32F2F; 
+    
+    --cor-fundo-cartao: #ffffff;
+    --fonte-principal: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    line-height: 1.6;
+}
+
+
+header {
+    background-color: var(--cor-primaria);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#logo {
+    max-width: 150px;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+
+nav {
+    background-color: var(--cor-secundaria);
+    margin-top: 1rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    transition: background-color 0.3s;
+}
+
+
+nav ul li a:hover {
+    background-color: var(--cor-destaque);
+    color: white;
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    color: white;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+
+.menu-visualizacao {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.menu-visualizacao button {
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    font-size: 1rem;
+    background-color: var(--cor-secundaria);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.menu-visualizacao button:hover {
+    background-color: var(--cor-destaque);
+}
+
+
+main {
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+#cartoes {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: stretch; 
+}
+
+
+#cartoes section {
+    background-color: var(--cor-fundo-cartao);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; 
+}
+
+
+#cartoes section img {
+    width: 100%;
+    max-width: 150px;
+    height: 150px; 
+    object-fit: contain; 
+    margin: 0 auto 1rem auto;
+}
+
+#cartoes section h3 {
+    color: var(--cor-primaria);
+    margin-bottom: 0.5rem;
+}
+
+#cartoes section a {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#cartoes section a:hover {
+    text-decoration: underline;
+}
+
+
+#cartoes.list {
+    display: flex;
+    flex-direction: column;
+}
+
+#cartoes.list section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+
+.cabecalho-topo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px; 
+}
+
+#logo {
+    max-width: 100px; 
+    height: auto;
+    margin-top: 0; 
+    border-radius: 8px;
+}

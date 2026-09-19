@@ -1,0 +1,80 @@
+nav ul {
+    flex-direction: row;
+    justify-content: center;
+}
+
+nav ul li a {
+    border-bottom: none;
+    border-right: 1px solid rgba(255,255,255,0.1);
+}
+
+nav ul li:last-child a {
+    border-right: none;
+}
+
+
+#cartoes {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+#cartoes section:hover {
+    transform: scale(1.02);
+}
+
+
+#cartoes.list {
+    display: flex;
+    flex-direction: column; 
+}
+
+
+#cartoes.list section {
+    display: grid;
+   
+    grid-template-columns: 80px 1.5fr 2fr 1fr 1fr 150px; 
+    gap: 1rem;
+    align-items: center; 
+    text-align: left;
+    padding: 1rem;
+    height: auto; 
+}
+
+
+#cartoes.list section img {
+    width: 80px;
+    height: 80px;
+    margin: 0; 
+}
+
+
+#cartoes.list section h3, 
+#cartoes.list section p, 
+#cartoes.list section a {
+    margin: 0;
+    text-align: left;
+    font-size: 0.95rem; 
+}
+
+
+#cartoes.list section a {
+    text-align: center;
+    padding: 0.5rem;
+    background-color: var(--cor-secundaria);
+    color: white;
+    border-radius: 4px;
+}
+
+
+.cabecalho-topo {
+    flex-direction: row; 
+    justify-content: center; 
+    text-align: left; 
+}
+
+#logo {
+    max-width: 120px;
+}
+
+#bmenu {
+    display: none; 
+}

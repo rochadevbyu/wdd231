@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 550 160">
+  <!-- Ícone Simbólico de Camaragibe -->
+  <g transform="translate(20, 15)">
+    <!-- 1. A Engrenagem (Fábrica de Tecidos e Era Industrial) -->
+    <path d="M65,10 A55,55 0 1,1 64.9,10" fill="none" stroke="#005B96" stroke-width="8" stroke-dasharray="14, 10"/>
+    <circle cx="65" cy="65" r="45" fill="none" stroke="#005B96" stroke-width="3" opacity="0.5"/>
+
+    <!-- 2. A Planta "Camará" (Origem Indígena e Mata Atlântica) -->
+    <path d="M65,70 C 15,40 15,90 65,115 C 115,90 115,40 65,70 Z" fill="#228B22" opacity="0.95"/>
+    
+    <!-- 3. A Flor de Chumbinho e a Fé (Ponto Vermelho) -->
+    <circle cx="65" cy="50" r="9" fill="#D32F2F" />
+
+    <!-- 4. O Rio dos Camaras (Ondas Azuis na base) -->
+    <path d="M 25,125 Q 45,110 65,125 T 105,125" fill="none" stroke="#005B96" stroke-width="5" stroke-linecap="round"/>
+    <path d="M 25,138 Q 45,123 65,138 T 105,138" fill="none" stroke="#005B96" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Tipografia Profissional -->
+  <text x="170" y="65" font-family="Arial, sans-serif" font-size="30" font-weight="bold" fill="#005B96">CÂMARA DE COMÉRCIO</text>
+  <text x="170" y="95" font-family="Arial, sans-serif" font-size="22" font-weight="normal" fill="#333333">DE CAMARAGIBE - PE</text>
+  
+  <!-- Slogan Histórico -->
+  <text x="170" y="125" font-family="Arial, sans-serif" font-size="13" font-weight="bold" fill="#228B22" letter-spacing="1.5">DO RIO DOS CAMARAS AO COMÉRCIO MODERNO</text>
+</svg>
