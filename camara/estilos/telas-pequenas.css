@@ -37,13 +37,6 @@ header {
     text-align: center;
 }
 
-#logo {
-    max-width: 150px;
-    height: auto;
-    margin-top: 1rem;
-    border-radius: 8px;
-}
-
 
 nav {
     background-color: var(--cor-secundaria);
