@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Página Inicial | Câmara de Comércio de Camaragibe</title>
+    <meta name="description" content="Página oficial da Câmara do Comércio de Camaragibe - PE. Conectando negócios, fortalecendo a economia local e promovendo o desenvolvimento.">
+    <meta name="author" content="Roberto Ferreira da Rocha">
+
+    <meta property="og:title" content="Página Inicial | Câmara de Comércio de Camaragibe">
+    <meta property="og:description" content="Página oficial da Câmara do Comércio de Camaragibe - PE. Conectando negócios, fortalecendo a economia local e promovendo o desenvolvimento.">
+    <meta property="og:image" content="https://rochadevbyu.github.io/wdd231/camara/imagens/camaragibe.webp">
+    <meta property="og:url" content="https://rochadevbyu.github.io/wdd231/camara/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="cabecalho-topo">
+            <img src="imagens/logo2.svg" alt="Logo da Câmara do Comércio de Camaragibe - PE" id="logo">
+            <h1>Câmara do Comércio de Camaragibe - PE</h1>
+        </div>
+        
+        <button id="bmenu" aria-label="Abrir menu de navegação">☰</button>
+        
+        <nav>
+            <ul> 
+                <li><a href="index.html" class="ativo">Início</a></li>
+                <li><a href="diretorio.html">Diretório</a></li>
+                <li><a href="#">Eventos</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="inicio-grid">
+
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 800px)" srcset="imagens/camaragibe.webp">
+                <img src="imagens/camaragibe.webp" alt="Centro comercial de Camaragibe" width="1200" height="500">
+            </picture>
+            <div class="cta-bloco">
+                <h2>Bem-vindo à Câmara de Comércio</h2>
+                <p>Impulsione o crescimento do seu negócio e descubra oportunidades locais.</p>
+                <a href="associe.html" class="botao-cta">Associe-se à Câmara</a>
+            </div>
+        </section>
+
+        <section class="eventos">
+            <h3>Próximos Eventos</h3>
+            <ul>
+                <li><strong>Feira de Negócios:</strong> 15 de Julho de 2026 - Centro de Convenções</li>
+                <li><strong>Palestra sobre Empreendedorismo:</strong> 22 de Agosto de 2026 - Auditório da Câmara</li>
+                <li><strong>Workshop de Marketing Digital:</strong> 5 de Setembro de 2026 - Sala de Treinamento</li>                    
+            </ul>
+        </section>
+
+        <section class="clima">
+            <h3>Clima Atual</h3>
+            <div id="clima-atual"></div>
+            <div id="previsao-tempo">
+                <h4>Previsão para 3 dias</h4>
+                <ul id="lista-previsao"></ul>
+            </div>
+        </section>
+        
+        <section class="destaques">
+            <h3>Empresas em Destaque</h3>
+            <div id="empresas-destaque"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="anoAtual"></span> Câmara do Comércio de Camaragibe - PE. Todos os direitos reservados.</p>
+        <p>Roberto Ferreira da Rocha | WDD 231</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+    
+</body>
+
+</html>

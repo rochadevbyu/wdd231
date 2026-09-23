@@ -28,9 +28,37 @@ header {
     text-align: center;
 }
 
+.cabecalho-topo {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 15px; 
+}
+
+#logo {
+    max-width: 100px; 
+    height: auto;
+    margin-top: 0; 
+    border-radius: 8px;
+}
+
+#bmenu {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
 nav {
     background-color: var(--cor-secundaria);
     margin-top: 1rem;
+    display: none;
+}
+
+nav.exibir {
+    display: block;
 }
 
 nav ul {
@@ -59,14 +87,6 @@ nav ul li a:hover {
     color: #ffffff;
 }
 
-footer {
-    background-color: var(--cor-primaria);
-    color: #ffffff;
-    text-align: center;
-    padding: 2rem 1rem;
-    margin-top: 2rem;
-}
-
 .menu-visualizacao {
     text-align: center;
     margin: 2rem 0;
@@ -86,12 +106,6 @@ footer {
 
 .menu-visualizacao button:hover {
     background-color: var(--cor-destaque);
-}
-
-main {
-    padding: 0 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
 }
 
 #cartoes {
@@ -126,6 +140,7 @@ main {
 #cartoes section h3 {
     color: var(--cor-primaria);
     margin-bottom: 0.5rem;
+    text-align: center;
 }
 
 #cartoes section a {
@@ -152,16 +167,131 @@ main {
     text-align: left;
 }
 
-.cabecalho-topo {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    gap: 15px; 
+main {
+    padding: 0 1rem;
+    max-width: 1200px;
+    margin: 1.5rem auto;
 }
 
-#logo {
-    max-width: 100px; 
+#inicio-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Coluna única no celular para evitar rolagem horizontal */
+    gap: 1.5rem;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+
+.hero picture,
+.hero img {
+    display: block;
+    width: 100%;
     height: auto;
-    margin-top: 0; 
+    object-fit: cover;
     border-radius: 8px;
+}
+
+.cta-bloco {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.cta-bloco h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.cta-bloco p {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+}
+
+.botao-cta {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--cor-destaque);
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.eventos, .clima {
+    background-color: var(--cor-fundo-cartao);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.eventos ul, .clima ul {
+    list-style-position: inside;
+    margin-top: 0.5rem;
+}
+
+#empresas-destaque {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.cartao-destaque {
+    background-color: var(--cor-fundo-cartao);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.cartao-destaque img {
+    width: 100%;
+    max-width: 140px;      
+    height: 100px;         
+    object-fit: contain;  
+    margin: 0 auto 0.8rem auto;
+}
+
+.cartao-destaque h4 {
+    color: var(--cor-primaria);
+    margin-bottom: 0.3rem;
+}
+
+.cartao-destaque p {
+    font-size: 0.9rem;
+    margin: 0.2rem 0;
+}
+
+.cartao-destaque a {
+    display: inline-block;
+    margin-top: 0.8rem;
+    color: var(--cor-destaque);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: var(--cor-primaria);
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 2rem;
+}
+
+h3 {
+    text-align: center;
 }

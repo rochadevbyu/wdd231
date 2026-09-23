@@ -1,6 +1,15 @@
 @media (min-width: 768px) {
     
+    nav {
+        display: block !important;
+    }
+
+    #bmenu {
+        display: none;
+    }
+
     nav ul {
+        display: flex;
         flex-direction: row;
         justify-content: center;
     }
@@ -28,17 +37,17 @@
     }
 
     #cartoes.list section {
-    display: grid;
-    grid-template-columns: 1.5fr 2fr 1fr 1fr 150px;
-    gap: 1rem;
-    align-items: center; 
-    text-align: left;
-    padding: 1rem;
-    height: auto; 
+        display: grid;
+        grid-template-columns: 1.5fr 2fr 1fr 1fr 150px;
+        gap: 1rem;
+        align-items: center; 
+        text-align: left;
+        padding: 1rem;
+        height: auto; 
     }
 
     #cartoes.list section img {
-    display: none; 
+        display: none; 
     }
 
     #cartoes.list section h3, 
@@ -69,6 +78,90 @@
 
     #bmenu {
         display: none; 
+    }
+
+    
+    #inicio-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+        "hero hero"
+        "eventos clima"
+        "destaques destaques";
+    gap: 1.5rem;
+    align-items: stretch; 
+    }
+
+    .eventos, .clima {
+        background-color: var(--cor-fundo-cartao, #ffffff);
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .hero { 
+        grid-area: hero; 
+        position: relative; 
+    }
+
+    .eventos { grid-area: eventos; }
+    
+    .clima { grid-area: clima; }
+    
+    .destaques { grid-area: destaques; }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    .cta-bloco {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        background-color: rgba(255, 255, 255, 0.75); 
+        padding: 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+        max-width: auto;
+        text-align: center;
+    }
+
+    #empresas-destaque {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); 
+        gap: 1.5rem;
+        align-items: stretch; 
+    }
+
+    .cartao-destaque {
+        background-color: var(--cor-fundo-cartao, #ffffff);
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        height: 100%; 
+        text-align: center;
+    }
+
+    
+    .cartao-destaque img {
+        width: 100%;
+        max-width: 150px; 
+        height: 120px; 
+        object-fit: contain; 
+        margin: 0 auto 1rem auto;
+    }
+
+    h3 {
+        text-align: center;
     }
 
 }
