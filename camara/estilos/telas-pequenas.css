@@ -179,7 +179,7 @@ main {
 
 #inicio-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Coluna única no celular para evitar rolagem horizontal */
+    grid-template-columns: 1fr; 
     gap: 1.5rem;
 }
 
