@@ -4,16 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Associe-se | Câmara de Comércio de Camaragibe</title>
-    <meta name="description" content="Formulário de associação à Câmara do Comércio de Camaragibe - PE.">
-
-    <meta property="og:description" content="Formulário de associação à Câmara do Comércio de Camaragibe - PE - ">
+    <title>Associe-se e Câmara de Comércio de Camaragibe</title>
     <meta name="author" content="Roberto Ferreira da Rocha">
-    <meta property="og:image" content="https://rochadevbyu.github.io/wdd231/camara/imagens/camaragibe.webp">
+    <meta name="description" content="Preencha o formulário para se associar e aproveitar os benefícios da Câmara de Comércio de Camaragibe - PE.">
     <meta property="og:title" content="Associe-se à Câmara de Comércio de Camaragibe">
-    <meta property="og:url" content="https://rochadevbyu.github.io/wdd231/camara/associacao.html">
-
-    <link rel="stylesheet" href="estilos/normalize.css">
+    <meta property="og:description" content="Associe-se e aproveite todos os benefícios oferecidos pela Câmara de Comércio de Camaragibe.">
+    <meta property="og:image" content="https://rochadevbyu.github.io/wdd231/camara/imagens/camaragibe.webp">
+    <meta property="og:url" content="https://rochadevbyu.github.io/wdd231/camara/associacao.html"><link rel="stylesheet" href="estilos/normalize.css">
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link rel="stylesheet" href="estilos/telas-grandes.css">
 
@@ -52,35 +49,35 @@
             <h2>Formulário de Associação</h2>
             <form method="get" action="agradecimento.html" class="form-associacao">
                 <label>Nome: 
-                    <input type="text" name="nome" required autocomplete="given-name">
-                </label>
-                <label>Sobrenome: 
-                    <input type="text" name="sobrenome" required autocomplete="family-name">
-                </label>
-                <label>Cargo na Organização: 
-                    <input type="text" name="cargo" pattern="[A-Za-zÀ-ÿ\s\-]{7,}" title="Apenas letras, espaços e hifens. Mínimo de 7 caracteres." autocomplete="organization-title">
-                </label>
-                <label>E-mail: 
-                    <input type="email" name="email" required placeholder="seu.email@exemplo.com" autocomplete="email">
-                </label>
-                <label>Celular: 
-                    <input type="tel" name="celular" required autocomplete="tel">
-                </label>
-                <label>Nome da Empresa/Organização: 
-                    <input type="text" name="organizacao" required autocomplete="organization">
-                </label>
+        <input type="text" name="nome" title="Insira seu primeiro nome" required autocomplete="given-name">
+        </label>
+        <label>Sobrenome: 
+            <input type="text" name="sobrenome" title="Insira seu sobrenome completo" required autocomplete="family-name">
+        </label>
+        <label>Cargo na Organização: 
+            <input type="text" name="cargo" pattern="[A-Za-zÀ-ÿ\s\-]{7,}" title="Apenas letras, espaços e hifens. Mínimo de 7 caracteres." autocomplete="organization-title">
+        </label>
+        <label>E-mail: 
+            <input type="email" name="email" title="Insira um endereço de e-mail válido" required placeholder="seu.email@exemplo.com" autocomplete="email">
+        </label>
+        <label>Celular: 
+            <input type="tel" name="celular" title="Insira seu número de celular com DDD" required autocomplete="tel">
+        </label>
+        <label>Nome da Empresa/Organização: 
+            <input type="text" name="organizacao" title="Insira o nome da sua empresa" required autocomplete="organization">
+        </label>
 
-                <fieldset class="niveis-fieldset">
-                    <legend>Selecione o Nível de Associação</legend>
-                    <label><input type="radio" name="nivel" value="np" required> Associação NP (Sem fins lucrativos - Gratuito)</label>
-                    <label><input type="radio" name="nivel" value="bronze"> Bronze</label>
-                    <label><input type="radio" name="nivel" value="silver"> Prata</label>
-                    <label><input type="radio" name="nivel" value="gold"> Ouro</label>
-                </fieldset>
+        <fieldset class="niveis-fieldset">
+            <legend>Selecione o Nível de Associação</legend>
+            <label><input type="radio" name="nivel" value="np" title="Nível Sem Fins Lucrativos" required> Associação NP (Sem fins lucrativos - Gratuito)</label>
+            <label><input type="radio" name="nivel" value="bronze" title="Nível Bronze"> Bronze</label>
+            <label><input type="radio" name="nivel" value="silver" title="Nível Prata"> Prata</label>
+            <label><input type="radio" name="nivel" value="gold" title="Nível Ouro"> Ouro</label>
+        </fieldset>
 
-                <label>Descrição da Empresa: 
-                    <textarea name="descricao" rows="4"></textarea>
-                </label>
+        <label>Descrição da Empresa: 
+            <textarea name="descricao" rows="4" title="Descreva os serviços ou produtos da sua empresa"></textarea>
+        </label>
 
                 <input type="hidden" name="timestamp" id="timestamp">
                 
@@ -89,19 +86,19 @@
         </section>
 
         <section class="cartoes-container">
-            <div class="cartao-nivel animar-entrada">
+            <div class="cartao-nivel animar-entrada anim-1">
                 <h3>Associação NP</h3>
                 <button class="abrir-modal" data-modal="modal-np">Ver Benefícios</button>
             </div>
-            <div class="cartao-nivel animar-entrada" style="animation-delay: 0.2s;">
+            <div class="cartao-nivel animar-entrada anim-2">
                 <h3>Bronze</h3>
                 <button class="abrir-modal" data-modal="modal-bronze">Ver Benefícios</button>
             </div>
-            <div class="cartao-nivel animar-entrada" style="animation-delay: 0.4s;">
+            <div class="cartao-nivel animar-entrada anim-3">
                 <h3>Prata</h3>
                 <button class="abrir-modal" data-modal="modal-prata">Ver Benefícios</button>
             </div>
-            <div class="cartao-nivel animar-entrada" style="animation-delay: 0.6s;">
+            <div class="cartao-nivel animar-entrada anim-4">
                 <h3>Ouro</h3>
                 <button class="abrir-modal" data-modal="modal-ouro">Ver Benefícios</button>
             </div>

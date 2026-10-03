@@ -101,7 +101,7 @@ nav ul li a:hover {
     margin: 0 0.5rem;
     font-size: 1rem;
     background-color: var(--cor-secundaria);
-    color: #ffffff;
+    color: #ffffff; /* <-- ADICIONE ESTA LINHA */
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -380,3 +380,8 @@ dialog::backdrop { background-color: rgba(0, 0, 0, 0.6); }
     border: none;
     border-radius: 4px;
 }
+
+.anim-1 { animation-delay: 0s; }
+.anim-2 { animation-delay: 0.2s; }
+.anim-3 { animation-delay: 0.4s; }
+.anim-4 { animation-delay: 0.6s; }
