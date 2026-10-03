@@ -101,7 +101,7 @@ nav ul li a:hover {
     margin: 0 0.5rem;
     font-size: 1rem;
     background-color: var(--cor-secundaria);
-    color: #ffffff; /* <-- ADICIONE ESTA LINHA */
+    color: #ffffff;
     border: none;
     border-radius: 4px;
     cursor: pointer;
