@@ -20,10 +20,13 @@
     <link rel="stylesheet" href="estilos/telas-pequenas.css">
     <link rel="stylesheet" href="estilos/telas-grandes.css">
 
-    <script src="scripts/data.js" defer></script>
-    <script src="scripts/cursos.js" defer></script>
+    <script type="module" src="scripts/data.js"></script>
+    <script type="module" src="scripts/cursos.js"></script>
 
 </head>
+
+    
+
 
 
 <body>
@@ -46,6 +49,12 @@
 
     <main>
         <h1> WDD 231: Desenvolvimento Frontend para Web I</h1>
+
+        <button id="btnAbrir">Mais Informações</button>
+        <dialog id="caixaDialogo">
+            <p>Informações adicionais sobre esse tópico</p>
+            <button id="btnFechar">Fechar</button>
+        </dialog>
 
         <div class="grade-superior">
 
@@ -96,6 +105,7 @@
 
     </footer>
 
+    <script type="module" src="scripts/modal.js"></script>
 
 </body>
 </html>

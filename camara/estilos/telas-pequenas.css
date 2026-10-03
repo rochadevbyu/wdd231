@@ -301,3 +301,82 @@ footer {
 h3 {
     text-align: center;
 }
+
+.form-associacao label {
+    display: block;
+    margin-bottom: 1.2rem;
+    font-weight: bold;
+}
+.form-associacao input[type="text"],
+.form-associacao input[type="email"],
+.form-associacao input[type="tel"],
+.form-associacao textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.niveis-fieldset {
+    border: 1px solid var(--cor-primaria);
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+    border-radius: 4px;
+}
+.niveis-fieldset label {
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+.botao-submit {
+    background-color: var(--cor-secundaria);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+.botao-submit:hover { background-color: var(--cor-destaque); }
+
+.cartoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.cartao-nivel {
+    background-color: var(--cor-fundo-cartao);
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.animar-entrada {
+    opacity: 0;
+    animation: fadeSlideUp 0.8s ease-out forwards;
+}
+@keyframes fadeSlideUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+dialog {
+    border: none;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin: auto;
+}
+dialog::backdrop { background-color: rgba(0, 0, 0, 0.6); }
+.abrir-modal, .fechar-modal {
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    background-color: var(--cor-primaria);
+    color: white;
+    border: none;
+    border-radius: 4px;
+}

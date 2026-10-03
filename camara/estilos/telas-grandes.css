@@ -166,4 +166,15 @@
         text-align: center;
     }
 
+    @media (min-width: 768px) {
+    .associacao-layout {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+    .cartoes-container { margin-top: 0; }
 }
+
+}
+
