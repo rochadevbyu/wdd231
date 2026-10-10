@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Sobre Camaragibe | Câmara de Comércio</title>
+    <title>Sobre a Câmara do Comércio de Camaragibe</title>
     <meta name="description" content="Conheça os pontos históricos, turísticos e comerciais de Camaragibe - PE.">
     <meta name="author" content="Roberto Ferreira da Rocha">
 
-    <meta property="og:title" content="Sobre Camaragibe | Câmara de Comércio">
+    <meta property="og:title" content="Sobre a Câmara do Comércio de Camaragibe">
     <meta property="og:description" content="Descubra a história e os locais de interesse de Camaragibe.">
     <meta property="og:image" content="https://rochadevbyu.github.io/wdd231/camara/imagens/camaragibe.webp">
     <meta property="og:url" content="https://rochadevbyu.github.io/wdd231/camara/sobre.html">
@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="estilos/telas-grandes.css">
     <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
 
-    <!-- Referência ao script geral e ao script desta página (como módulo) -->
     <script src="scripts/data.js" defer></script>
     <script type="module" src="scripts/sobre.js"></script>
 
@@ -30,8 +29,8 @@
 <body>
     <header>
         <div class="cabecalho-topo">
-            <img src="imagens/logo2.svg" alt="Logo da Câmara do Comércio de Camaragibe - PE" id="logo">
-            <h1>Câmara do Comércio de Camaragibe - PE</h1>
+            <img src="imagens/logo2.svg" alt="Logo da Câmara do Comércio de Camaragibe - PE" id="logo" width="100" height="auto">
+            <h2>Câmara do Comércio de Camaragibe - PE</h2>
         </div>
         
         <button id="bmenu" aria-label="Abrir menu de navegação">☰</button>
@@ -48,15 +47,13 @@
     </header>
 
     <main id="sobre-layout">
-        <!-- 1. Mensagem via localStorage -->
         <div id="mensagem-visita" class="alerta-visita"></div>
 
         <section class="titulo-sobre">
-            <h2>Descubra Camaragibe</h2>
+            <h1>Sobre Camaragibe</h1>
             <p>Conheça os pontos turísticos e comerciais que fazem a nossa cidade crescer.</p>
         </section>
 
-        <!-- 2. Galeria populada via JavaScript -->
         <div id="galeria-descubra"></div>
     </main>
 

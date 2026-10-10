@@ -1,4 +1,3 @@
-// scripts/sobre.js
 import { lugares } from '../dados/descubra.mjs';
 
 const painelMensagem = document.querySelector('#mensagem-visita');
@@ -19,7 +18,6 @@ if (!dataUltimaVisita) {
     }
 }
 localStorage.setItem('ultimaVisitaCamara', dataAtual);
-
 
 const galeria = document.querySelector('#galeria-descubra');
 
