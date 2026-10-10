@@ -400,9 +400,7 @@ dialog::backdrop {
 .anim-3 { animation-delay: 0.4s; }
 .anim-4 { animation-delay: 0.6s; }
 
-/* ========================================================
-   ESTILOS ESPECÍFICOS DA PÁGINA SOBRE
-   ======================================================== */
+
 .alerta-visita {
     background-color: var(--cor-destaque);
     color: #ffffff;
@@ -423,7 +421,6 @@ dialog::backdrop {
     color: var(--cor-primaria);
 }
 
-/* Layout 1: Mobile (320px a 640px) - Áreas Nomeadas (1 coluna) */
 #galeria-descubra {
     display: grid;
     grid-template-columns: 1fr;
