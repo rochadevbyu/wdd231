@@ -1,5 +1,4 @@
 @media (min-width: 768px) {
-    
     nav {
         display: block !important;
     }
@@ -16,7 +15,7 @@
 
     nav ul li a {
         border-bottom: none;
-        border-right: 1px solid rgba(255,255,255,0.1);
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
     }
 
     nav ul li:last-child a {
@@ -76,20 +75,15 @@
         max-width: 120px;
     }
 
-    #bmenu {
-        display: none; 
-    }
-
-    
     #inicio-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-areas: 
-        "hero hero"
-        "eventos clima"
-        "destaques destaques";
-    gap: 1.5rem;
-    align-items: stretch; 
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+            "hero hero"
+            "eventos clima"
+            "destaques destaques";
+        gap: 1.5rem;
+        align-items: stretch; 
     }
 
     .eventos, .clima {
@@ -97,7 +91,7 @@
         border: 1px solid #ddd;
         border-radius: 8px;
         padding: 1.5rem;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
     .hero { 
@@ -106,9 +100,7 @@
     }
 
     .eventos { grid-area: eventos; }
-    
     .clima { grid-area: clima; }
-    
     .destaques { grid-area: destaques; }
 
     .hero img {
@@ -144,8 +136,7 @@
         border: 1px solid #ddd;
         border-radius: 8px;
         padding: 1.5rem;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         display: flex;
         flex-direction: column;
         justify-content: space-between; 
@@ -153,7 +144,6 @@
         text-align: center;
     }
 
-    
     .cartao-destaque img {
         width: 100%;
         max-width: 150px; 
@@ -166,31 +156,45 @@
         text-align: center;
     }
 
-    @media (min-width: 768px) {
     .associacao-layout {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 2rem;
         align-items: start;
     }
-    .cartoes-container { margin-top: 0; }
+
+    .cartoes-container { 
+        margin-top: 0; 
     }
-
-    /* --- ESTILOS DA PÁGINA SOBRE (DESKTOP) --- */
-    @media (min-width: 1025px) {
-        #galeria-descubra {
-            grid-template-columns: repeat(4, 1fr);
-            grid-template-areas:
-                "c1 c2 c3 c4"
-                "c5 c6 c7 c8";
-        }
-
-        /* Efeito Flutuação de Imagem (Apenas telas grandes) */
-        .cartao-lugar img:hover {
-            transform: scale(1.08);
-            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
-        }
-    }
-
 }
 
+/* Layout 3: Telas Grandes (Desktop - 1025px e acima) */
+@media (min-width: 1025px) {
+    #galeria-descubra {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+        grid-template-areas:
+            "c1 c2 c3 c4"
+            "c5 c6 c7 c8";
+    }
+
+    .card-1 { grid-area: c1; }
+    .card-2 { grid-area: c2; }
+    .card-3 { grid-area: c3; }
+    .card-4 { grid-area: c4; }
+    .card-5 { grid-area: c5; }
+    .card-6 { grid-area: c6; }
+    .card-7 { grid-area: c7; }
+    .card-8 { grid-area: c8; }
+
+    /* Efeito de hover aplicado apenas em desktops */
+    .cartao-lugar img {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cartao-lugar img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    }
+}
