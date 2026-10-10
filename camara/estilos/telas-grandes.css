@@ -168,7 +168,6 @@
     }
 }
 
-/* Layout 3: Telas Grandes (Desktop - 1025px e acima) */
 @media (min-width: 1025px) {
     #galeria-descubra {
         display: grid;
@@ -188,7 +187,6 @@
     .card-7 { grid-area: c7; }
     .card-8 { grid-area: c8; }
 
-    /* Efeito de hover aplicado apenas em desktops */
     .cartao-lugar img {
         transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
