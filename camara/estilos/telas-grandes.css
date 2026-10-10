@@ -174,7 +174,23 @@
         align-items: start;
     }
     .cartoes-container { margin-top: 0; }
-}
+    }
+
+    /* --- ESTILOS DA PÁGINA SOBRE (DESKTOP) --- */
+    @media (min-width: 1025px) {
+        #galeria-descubra {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas:
+                "c1 c2 c3 c4"
+                "c5 c6 c7 c8";
+        }
+
+        /* Efeito Flutuação de Imagem (Apenas telas grandes) */
+        .cartao-lugar img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+        }
+    }
 
 }
 

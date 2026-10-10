@@ -385,3 +385,112 @@ dialog::backdrop { background-color: rgba(0, 0, 0, 0.6); }
 .anim-2 { animation-delay: 0.2s; }
 .anim-3 { animation-delay: 0.4s; }
 .anim-4 { animation-delay: 0.6s; }
+
+.alerta-visita {
+    background-color: var(--cor-destaque);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.titulo-sobre {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.titulo-sobre h2 {
+    color: var(--cor-primaria);
+}
+
+#galeria-descubra {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-areas:
+        "c1"
+        "c2"
+        "c3"
+        "c4"
+        "c5"
+        "c6"
+        "c7"
+        "c8";
+}
+
+.card-1 { grid-area: c1; }
+.card-2 { grid-area: c2; }
+.card-3 { grid-area: c3; }
+.card-4 { grid-area: c4; }
+.card-5 { grid-area: c5; }
+.card-6 { grid-area: c6; }
+.card-7 { grid-area: c7; }
+.card-8 { grid-area: c8; }
+
+.cartao-lugar {
+    background-color: var(--cor-fundo-cartao);
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cartao-lugar h2 {
+    font-size: 1.2rem;
+    color: var(--cor-primaria);
+    margin-bottom: 1rem;
+}
+
+.cartao-lugar img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin: 0 auto 1rem auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cartao-lugar address {
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.cartao-lugar p {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.btn-saiba-mais {
+    background-color: var(--cor-secundaria);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+    transition: background-color 0.3s;
+}
+
+.btn-saiba-mais:hover {
+    background-color: var(--cor-destaque);
+}
+
+@media (min-width: 640px) {
+    #galeria-descubra {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "c1 c2"
+            "c3 c4"
+            "c5 c6"
+            "c7 c8";
+    }
+}
