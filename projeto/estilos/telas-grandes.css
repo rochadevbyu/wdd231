@@ -67,7 +67,6 @@
         max-width: 500px;
     }
 
-    /* Ajuste elegante para a imagem Hero em telas grandes */
     .hero img {
         max-height: 320px; 
         object-fit: cover;

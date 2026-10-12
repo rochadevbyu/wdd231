@@ -7,7 +7,6 @@
     --text-color-main: #02214a;
 }
 
-/* Trava global de segurança contra scroll horizontal indesejado */
 html, body {
     font-family: Arial, sans-serif;
     background-color: var(--main-color);
@@ -90,7 +89,6 @@ nav a:hover, nav a.active {
     color: var(--accent-color);
 }
 
-/* --- Imagem Principal (Hero) na Página Inicial --- */
 .hero { 
     text-align: center;
     width: 100%;
@@ -99,7 +97,7 @@ nav a:hover, nav a.active {
 .hero img {
     width: 100%;
     max-width: 100%;
-    max-height: 220px; /* Altura controlada para telemóveis */
+    max-height: 220px; 
     object-fit: cover; 
     object-position: center 20%; 
     border-radius: 8px;
