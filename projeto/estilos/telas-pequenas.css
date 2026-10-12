@@ -292,3 +292,12 @@ footer a:hover { color: var(--accent-color); }
     border: none; 
     padding: 0;
 }
+
+.form-section form label,
+.bloco-condicional label {
+    color: #ffffff !important;
+}
+
+legend.titulo-diagnostico {
+    color: var(--accent-color) !important;
+}
