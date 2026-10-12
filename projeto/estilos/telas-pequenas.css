@@ -143,6 +143,11 @@ nav a:hover, nav a.active {
     border-radius: 12px;
     text-align: center;
     width: 100%;
+    color: #ffffff;
+}
+
+.institucional p {
+    color: #ffffff;
 }
 
 .institucional-texto h2 { color: var(--accent-color); margin-bottom: 1rem; font-size: 1.8rem; }
@@ -173,10 +178,9 @@ nav a:hover, nav a.active {
     padding: 1.5rem;
     border-radius: 12px;
     width: 100%;
-    color: #ffffff; /* Garante que elementos gerais herdados tenham texto branco */
+    color: #ffffff; 
 }
 
-/* Força contraste adequado para todos os rótulos e textos do formulário */
 .form-section form label,
 .form-section form p,
 .bloco-condicional label,
@@ -207,7 +211,6 @@ input, select {
     color: #ffffff;
 }
 
-/* Corrige o contraste da legenda nos blocos condicionais */
 .titulo-diagnostico { 
     color: var(--accent-color) !important; 
     font-weight: bold; 
