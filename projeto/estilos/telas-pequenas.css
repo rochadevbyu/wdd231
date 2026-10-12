@@ -224,3 +224,35 @@ footer a:hover { color: var(--accent-color); }
     margin-top: auto; 
 }
 .label-branca { color: #ffffff; }
+
+.margem-bottom-sm {
+    margin-bottom: 0.5rem;
+}
+
+.margem-top-sm {
+    margin-top: 0.5rem;
+}
+
+.margem-zero {
+    margin: 0;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.espacamento-bloco {
+    margin-bottom: 0.8rem;
+}
+
+.texto-centralizado-bloco {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.fieldset-outro {
+    display: none; 
+    margin-top: 0.5rem; 
+    border: none; 
+    padding: 0;
+}

@@ -61,8 +61,8 @@
                 <label for="orgao">Órgão / Setor: <span class="asterisco">*</span></label>
                 <input type="text" id="orgao" name="orgao" placeholder="Ex: Fundo Previdenciário..." required>
 
-                <label class="label-branca" style="margin-bottom: 0.5rem;">Qual é o seu perfil de atuação? <span class="asterisco">*</span></label>
-                <div class="radio-group-estilizado" style="flex-wrap: wrap;">
+                <label class="label-branca margem-bottom-sm">Qual é o seu perfil de atuação? <span class="asterisco">*</span></label>
+                <div class="radio-group-estilizado flex-wrap">
                     <label class="radio-label"><input type="radio" name="perfil" value="gestor" required> Gestor de RPPS</label>
                     <label class="radio-label"><input type="radio" name="perfil" value="contador"> Contador</label>                    
                     <label class="radio-label"><input type="radio" name="perfil" value="prefeito"> Prefeito</label>
@@ -71,30 +71,30 @@
 
                 <fieldset id="gestor-perfil" class="bloco-condicional">
                     <legend class="titulo-diagnostico">Interesse e Desafios</legend>
-                    <p class="label-branca" style="margin-bottom: 1rem; margin-top: 0;">O que busca melhorar no seu RPPS?</p>
-                    <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_gestor" value="demonstracao"> Agendar uma demonstração completa</label>
-                    <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_gestor" value="guias"> Automação no controle de guias</label>
-                    <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_gestor" value="tce"> Facilidade para gerar anexos do TCE-PE</label>
+                    <p class="label-branca margem-zero margem-bottom-sm">O que busca melhorar no seu RPPS?</p>
+                    <label class="radio-label espacamento-bloco"><input type="checkbox" name="motivo_gestor" value="demonstracao"> Agendar uma demonstração completa</label>
+                    <label class="radio-label espacamento-bloco"><input type="checkbox" name="motivo_gestor" value="guias"> Automação no controle de guias</label>
+                    <label class="radio-label espacamento-bloco"><input type="checkbox" name="motivo_gestor" value="tce"> Facilidade para gerar anexos do TCE-PE</label>
                     <label class="radio-label"><input type="checkbox" name="motivo_gestor" value="orcamento"> Solicitar um orçamento</label>
                 </fieldset>
 
                 <fieldset id="parceiro-perfil" class="bloco-condicional">
                      <legend class="titulo-diagnostico">Interesse Estratégico</legend>
-                     <p class="label-branca" style="margin-bottom: 1rem; margin-top: 0;">Qual é o seu principal objetivo?</p>
-                     <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_contador" value="clientes"> Otimizar serviços para meus clientes (RPPS)</label>
-                     <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_contador" value="parceria"> Proposta de parceria/representação</label>
+                     <p class="label-branca margem-zero margem-bottom-sm">Qual é o seu principal objetivo?</p>
+                     <label class="radio-label espacamento-bloco"><input type="checkbox" name="motivo_contador" value="clientes"> Otimizar serviços para meus clientes (RPPS)</label>
+                     <label class="radio-label espacamento-bloco"><input type="checkbox" name="motivo_contador" value="parceria"> Proposta de parceria/representação</label>
                      <label class="radio-label"><input type="checkbox" name="motivo_contador" value="conhecer"> Apenas conhecer a tecnologia</label>
                 </fieldset>
 
                 <fieldset id="prefeito-perfil" class="bloco-condicional">
                      <legend class="titulo-diagnostico">Visão Executiva e Transparência</legend>
-                     <p class="label-branca" style="margin-bottom: 1rem; margin-top: 0;">Quais soluções você busca para sua gestão?</p>
-                     <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_prefeito" value="conhecer"> Conhecer a tecnologia</label>
-                     <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_prefeito" value="acompanhamento"> Verificar recursos para acompanhamento da gestão</label>
+                     <p class="label-branca margem-zero margem-bottom-sm">Quais soluções você busca para sua gestão?</p>
+                     <label class="radio-label espacamento-bloco"><input type="checkbox" name="motivo_prefeito" value="conhecer"> Conhecer a tecnologia</label>
+                     <label class="radio-label espacamento-bloco"><input type="checkbox" name="motivo_prefeito" value="acompanhamento"> Verificar recursos para acompanhamento da gestão</label>
                      <label class="radio-label"><input type="checkbox" name="motivo_prefeito" value="transparencia"> Dar mais transparência à população</label>
                 </fieldset>
 
-                <fieldset id="outros-perfil" class="bloco-condicional">
+                <fieldset id="outros-perfil" class="fieldset-outro">
                      <label for="especifique-outro" class="label-branca">Especifique seu perfil de atuação:</label>
                      <input type="text" id="especifique-outro" name="especifique_outro" placeholder="Ex: Advogado Previdenciário...">
                 </fieldset>
