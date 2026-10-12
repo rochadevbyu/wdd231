@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Página Inicial | SGINF-RPPS por Roberto Ferreira da Rocha</title>
+    <meta name="description" content="Página oficial do SGINF-RPPS. Plataforma inteligente de Auditoria e Controle Interno para Regimes Próprios de Previdência Social.">
+    <meta name="author" content="Roberto Ferreira da Rocha">
+
+    <meta property="og:title" content="Página Inicial | SGINF-RPPS">
+    <meta property="og:description" content="Plataforma de Auditoria e Controle Interno para RPPS. Simplifique a gestão previdenciária do seu município.">
+    <meta property="og:image" content="https://rochadevbyu.github.io/wdd231/sginf/imagens/index-padrao.webp">
+    <meta property="og:url" content="https://rochadevbyu.github.io/wdd231/sginf/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <script src="scripts/api.js" type="module" defer></script>
+    <script src="scripts/index.js" type="module" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">SGINF - RPPS</div>
+        <!-- Botão Hambúrguer adicionado -->
+        <button id="menu-btn" class="hamburguer" aria-label="Abrir Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>  
+    </header>
+    
+    <main>
+        <section class="hero">
+            <h1>Inteligência e Modernização na Gestão Previdenciária</h1>
+            <p>Plataforma inteligente de Auditoria e Controle Interno para RPPS. Simplifique a gestão de guias de contribuições, receitas e despesas.</p>
+            <p>Com o SGINF-RPPS você transformará a forma de gerenciar seu RPPS.</p>
+            <a href="solucoes.html" class="btn">Conheça as Soluções</a>
+        </section>
+
+        <section class="institucional">
+            <div class="institucional-texto">
+                <h2>Tecnologia e Inteligência para Regimes Próprios de Previdência</h2>
+                <p>O SGINF-RPPS não é apenas um software, é a solução definitiva criada para superar os desafios diários da gestão previdenciária municipal.</p>
+                <ul>
+                    <li>✅ <strong>Histórico de Dados de Fácil Acesso:</strong> Decisões seguras baseadas em dados, com dashboards em tempo real.</li>
+                    <li>✅ <strong>Auditoria Automatizada:</strong> Recursos avançados para garantir a integridade e precisão das informações contábeis.</li>
+                    <li>✅ <strong>Conformidade Rigorosa:</strong> Alinhamento técnico perfeito com as exigências e anexos dos Tribunais de Contas.</li>
+                </ul>
+                <a href="contato.html" class="btn">Agende uma Demonstração</a>
+            </div>
+            
+            <div class="institucional-imagem">
+                <img src="imagens/index-padrao.webp" alt="Interface de Business Intelligence do SGINF-RPPS">
+            </div>
+        </section>
+
+        <section class="destaques">
+            <h2 class="titulo-centralizado">Ferramentas em Destaque</h2>
+            <div id="destaques-container" class="grid-container"></div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <p>&copy; <span id="anoatual"></span> - SGINF-RPPS. Roberto Ferreira da Rocha. Todos os direitos reservados.</p>
+        <p id="ultimaModificacao"></p>
+        <p><a href="referencias.html">Página de Referências</a></p>
+    </footer>
+</body>
+</html>

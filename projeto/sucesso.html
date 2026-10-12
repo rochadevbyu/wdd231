@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sucesso | SGINF-RPPS por Roberto Ferreira da Rocha</title>
+    <meta name="description" content="Obrigado por entrar em contato com a equipe do SGINF-RPPS. Sua solicitação foi recebida com sucesso.">
+    <meta name="author" content="Roberto Ferreira da Rocha">
+
+    <meta property="og:title" content="Solicitação Recebida | SGINF-RPPS">
+    <meta property="og:description" content="Sua solicitação de demonstração do SGINF-RPPS foi recebida com sucesso.">
+    <meta property="og:image" content="https://rochadevbyu.github.io/wdd231/sginf/imagens/index-padrao.webp">
+    <meta property="og:url" content="https://rochadevbyu.github.io/wdd231/sginf/sucesso.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <script src="scripts/api.js" type="module"></script>
+    <script src="scripts/index.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">SGINF - RPPS</div>
+        <button id="menu-btn" class="hamburguer" aria-label="Abrir Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <main>
+        <section class="content-section" style="text-align: center; margin-top: 4rem;">
+            <h2 class="titulo-centralizado">Solicitação Concluída!</h2>
+            <div id="resultado-form" class="mensagem-sucesso"></div>
+            <a href="index.html" class="btn margem-top">Voltar à Página Inicial</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="anoatual"></span> - SGINF-RPPS. Todos os direitos reservados.</p>
+        <p id="ultimaModificacao"></p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const params = new URLSearchParams(window.location.search);
+            const nome = params.get('nome') || localStorage.getItem('sginf_lead_nome') || 'Usuário';
+            const municipio = params.get('municipio') || '';
+            const orgao = params.get('orgao') || localStorage.getItem('sginf_lead_orgao') || 'o seu órgão';
+            
+            document.getElementById('resultado-form').innerHTML = `
+                ✅ Obrigado, <strong>${nome}</strong>! Seus dados de demonstração para <strong>${orgao} ${municipio ? 'de ' + municipio : ''}</strong> foram recebidos com sucesso. Entraremos em contato em breve!
+            `;
+        });
+    </script>
+</body>
+</html>

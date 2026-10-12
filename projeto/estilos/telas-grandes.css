@@ -1,0 +1,73 @@
+@media (min-width: 768px) {
+    main {
+        overflow-x: visible; /* Restaura o fluxo normal no desktop */
+    }
+
+    /* --- Cabeçalho e Menu (Desktop) --- */
+    header {
+        flex-wrap: nowrap;
+        padding: 1.5rem 3rem;
+    }
+
+    .hamburguer {
+        display: none; /* Esconde o botão hambúrguer */
+    }
+
+    nav {
+        width: auto;
+    }
+
+    nav ul {
+        display: flex; /* Exibe os links lado a lado */
+        flex-direction: row;
+        background-color: transparent;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    /* --- Layout em Colunas (Desktop) --- */
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+    .institucional {
+        flex-direction: row;
+        gap: 3rem;
+        padding: 3rem;
+        text-align: left;
+    }
+
+    .institucional-texto h2 { font-size: 2.2rem; }
+
+    .radio-group-estilizado {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .form-section form {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .ref-container {
+        max-width: 800px;
+        margin: 4rem auto;
+        padding: 3rem;
+    }
+
+    .modal-estilizado {
+        max-width: 500px;
+    }
+
+    .hero img {
+        max-height: 300px; /* Limite claro para desktop, impedindo que fique muito alta */
+    }
+
+    /* --- Ajuste das Imagens dos Cartões para Telas Grandes --- */
+    .card img {
+        height: 160px; /* Levemente maior que no mobile, garantindo um visual de "vitrine" */
+    }
+}

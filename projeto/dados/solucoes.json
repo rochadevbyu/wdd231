@@ -1,0 +1,107 @@
+[
+  { 
+    "id": 1, 
+    "titulo": "Gestão de Guias de Recolhimento", 
+    "descricao": "Emissão, conferência e controle de guias previdenciárias...", 
+    "detalhes": "Emissão, conferência e controle de guias previdenciárias de servidores e parte patronal, com cálculo automático de juros, multas e atualização monetária.",
+    "imagem": "imagens/solucao-calculos.webp" 
+  },
+  { 
+    "id": 2, 
+    "titulo": "Relatório de Governança Corporativa", 
+    "descricao": "Geração automatizada de relatórios em PDF com acabamento...", 
+    "detalhes": "Geração automatizada de relatórios em PDF com acabamento profissional, gráficos integrados e comparativos detalhados entre o Fundo Previdenciário e o Fundo Financeiro.",
+    "imagem": "imagens/solucao-segregacao.webp" 
+  },
+  { 
+    "id": 3, 
+    "titulo": "Demonstrativo DIPR e Validação", 
+    "descricao": "Consolidação e conferência das informações de repasses...", 
+    "detalhes": "Consolidação e conferência das informações de repasses e despesas no padrão DIPR exigido pela Secretaria de Previdência (SPREV).",
+    "imagem": "imagens/solucao-tce.webp" 
+  },
+  { 
+    "id": 4, 
+    "titulo": "Importação e Controle de Despesas", 
+    "descricao": "Registro e importação em lote de benefícios concedidos...", 
+    "detalhes": "Registro e importação em lote (via planilha CSV) de benefícios concedidos (aposentadorias, pensões) e despesas administrativas, catalogados por rúbricas oficiais.",
+    "imagem": "imagens/solucao-dados.webp" 
+  },
+  { 
+    "id": 5, 
+    "titulo": "Gestão de Receitas e Demais Ingressos", 
+    "descricao": "Lançamento e acompanhamento de receitas próprias e Comprev...", 
+    "detalhes": "Lançamento e acompanhamento de receitas próprias, compensações previdenciárias (Comprev), aportes para cobertura de déficit e rendimentos financeiros.",
+    "imagem": "imagens/index-padrao.webp" 
+  },
+  { 
+    "id": 6, 
+    "titulo": "Painel de Inteligência (BI)", 
+    "descricao": "Gráficos e dashboards dinâmicos para visualização de tendências...", 
+    "detalhes": "Gráficos e dashboards dinâmicos para visualização de tendências financeiras, equilíbrio atuarial, taxa de cobertura e evolução da massa de segurados.",
+    "imagem": "imagens/index-padrao.webp" 
+  },
+  { 
+    "id": 7, 
+    "titulo": "Cadastro e Gestão de Servidores", 
+    "descricao": "Acompanhamento da base cadastral de servidores ativos e inativos...", 
+    "detalhes": "Acompanhamento da base cadastral de servidores ativos, aposentados e pensionistas, incluindo vínculos, órgãos de lotação e bases de cálculo contributivas.",
+    "imagem": "imagens/index-padrao.webp" 
+  },
+  { 
+    "id": 8, 
+    "titulo": "Contabilidade Previdenciária", 
+    "descricao": "Estruturação de lançamentos a débito e crédito...", 
+    "detalhes": "Estruturação de lançamentos a débito e crédito, plano de contas específico para RPPS e conciliação por regime de caixa e competência.",
+    "imagem": "imagens/index-padrao.webp" 
+  },
+  { 
+    "id": 9, 
+    "titulo": "Controle Interno e Conformidade", 
+    "descricao": "Monitoramento sistemático de prazos legais e limites de gastos...", 
+    "detalhes": "Monitoramento sistemático de prazos legais, limites de gastos administrativos, envio de obrigações e conformidade com as normas do TCE e SPREV.",
+    "imagem": "imagens/index-padrao.webp" 
+  },
+  { 
+    "id": 10, 
+    "titulo": "Auditoria e Análise Automatizada", 
+    "descricao": "Cruzamento de dados para identificação imediata de divergências...", 
+    "detalhes": "Cruzamento de dados entre bases salariais e repasses devidos para identificação imediata de divergências, valores retidos a menor e inadimplências.",
+    "imagem": "imagens/index-padrao.webp" 
+  },
+  { 
+    "id": 11, 
+    "titulo": "Geração de Ofícios", 
+    "descricao": "Emissão automatizada de notificações formais e ofícios...", 
+    "detalhes": "Emissão automatizada de notificações formais, ofícios de cobrança de repasses e recibos para secretarias e órgãos vinculados.",
+    "imagem": "imagens/index-padrao.webp" 
+  },
+  { 
+    "id": 12, 
+    "titulo": "Quitação Previdenciária", 
+    "descricao": "Emissão de certidões e relatórios comprobatórios de regularidade...", 
+    "detalhes": "Emissão de certidões e relatórios comprobatórios de regularidade financeira e quitação de obrigações por competência.",
+    "imagem": "imagens/index-padrao.webp" 
+  },
+  { 
+    "id": 13, 
+    "titulo": "Parametrização de Alíquotas", 
+    "descricao": "Configuração flexível de alíquotas ordinárias e suplementares...", 
+    "detalhes": "Configuração flexível de alíquotas ordinárias e suplementares, limites de contribuição e tabelas de indexadores econômicos (IPCA, INPC, SELIC).",
+    "imagem": "imagens/index-padrao.webp" 
+  },
+  { 
+    "id": 14, 
+    "titulo": "Gestão de Órgãos e Contas", 
+    "descricao": "Centralização dos dados das unidades gestoras e autarquias...", 
+    "detalhes": "Centralização dos dados das unidades gestoras, fundos segregados, poderes (Executivo/Legislativo), autarquias e contas bancárias vinculadas.",
+    "imagem": "imagens/index-padrao.webp" 
+  },
+  { 
+    "id": 15, 
+    "titulo": "Trilha de Auditoria e Logs", 
+    "descricao": "Registro cronológico e imutável de todas as ações dos usuários...", 
+    "detalhes": "Registro cronológico e imutável de todas as ações dos usuários (inclusão, alteração e exclusão de dados) para garantia de transparência e segurança da informação.",
+    "imagem": "imagens/index-padrao.webp" 
+  }
+]

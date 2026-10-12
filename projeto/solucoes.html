@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Soluções | SGINF-RPPS por Roberto Ferreira da Rocha</title>
+    <meta name="description" content="Conheça as soluções do SGINF-RPPS para resolver os principais desafios na gestão de Regimes Próprios de Previdência Social.">
+    <meta name="author" content="Roberto Ferreira da Rocha">
+
+    <meta property="og:title" content="Soluções | SGINF-RPPS">
+    <meta property="og:description" content="Conheça as soluções do SGINF-RPPS para resolver os principais desafios na gestão de Regimes Próprios de Previdência Social.">
+    <meta property="og:image" content="https://rochadevbyu.github.io/wdd231/sginf/imagens/index-padrao.webp">
+    <meta property="og:url" content="https://rochadevbyu.github.io/wdd231/sginf/solucoes.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <script src="scripts/api.js" type="module"></script>
+    <script src="scripts/index.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">SGINF - RPPS</div>
+        <button id="menu-btn" class="hamburguer" aria-label="Abrir Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="solucoes.html" class="active">Soluções</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>  
+    </header>
+    <main>
+        <section class="content-section">
+            <h2 class="titulo-centralizado">Como o SGINF Resolve Seus Desafios</h2>            
+            <div id="recursos-container" class="grid-container"></div>
+        </section>
+    </main>
+
+    <dialog id="modal-solucao" class="modal-estilizado">
+        <div class="modal-conteudo">
+            <h3 id="modal-titulo" class="solucao-titulo"></h3>
+            <p id="modal-desc" class="label-branca"></p>
+            <button id="fechar-modal" class="btn margem-top">Fechar</button>
+        </div>
+    </dialog>
+
+    <footer>
+        <p>&copy; <span id="anoatual"></span> - SGINF-RPPS. Roberto Ferreira da Rocha. Todos os direitos reservados.</p>
+        <p id="ultimaModificacao"></p>
+        <p><a href="referencias.html">Página de Referências</a></p>
+    </footer>
+</body>
+</html>

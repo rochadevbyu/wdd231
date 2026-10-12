@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contato | SGINF-RPPS por Roberto Ferreira da Rocha</title>
+    <meta name="description" content="Entre em contato com a equipe do SGINF-RPPS e agende uma demonstração completa para a sua gestão previdenciária.">
+    <meta name="author" content="Roberto Ferreira da Rocha">
+
+    <meta property="og:title" content="Contato | SGINF-RPPS">
+    <meta property="og:description" content="Fale com um especialista do SGINF-RPPS e agende uma demonstração para modernizar o seu regime previdenciário.">
+    <meta property="og:image" content="https://rochadevbyu.github.io/wdd231/sginf/imagens/index-padrao.webp">
+    <meta property="og:url" content="https://rochadevbyu.github.io/wdd231/sginf/contato.html">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="estilos/normalize.css">
+    <link rel="stylesheet" href="estilos/telas-pequenas.css">
+    <link rel="stylesheet" href="estilos/telas-grandes.css">
+    <link rel="icon" href="imagens/favicon.ico" type="image/x-icon">
+
+    <script src="scripts/api.js" type="module"></script>
+    <script src="scripts/index.js" type="module"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">SGINF - RPPS</div>
+        <button id="menu-btn" class="hamburguer" aria-label="Abrir Menu">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="solucoes.html">Soluções</a></li>
+                <li><a href="contato.html" class="active">Contato</a></li>
+            </ul>
+        </nav>  
+    </header>   
+    <main>
+        <section class="form-section">
+            <h2 class="titulo-centralizado">Fale com um Especialista</h2>
+            <form id="formulario-contato" action="sucesso.html" method="GET">
+                <label for="nome">Nome Completo: <span class="asterisco">*</span></label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="telefone">Telefone / WhatsApp: <span class="asterisco">*</span></label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <label for="uf">Estado: <span class="asterisco">*</span></label>
+                <select id="uf" name="uf" required>
+                    <option value="">Carregando Estados...</option>
+                </select>
+
+                <label for="municipio">Município: <span class="asterisco">*</span></label>
+                <select id="municipio" name="municipio" required disabled>
+                    <option value="">Selecione primeiro o Estado...</option>
+                </select>
+
+                <label for="orgao">Órgão / Setor: <span class="asterisco">*</span></label>
+                <input type="text" id="orgao" name="orgao" placeholder="Ex: Fundo Previdenciário..." required>
+
+                <label class="label-branca" style="margin-bottom: 0.5rem;">Qual é o seu perfil de atuação? <span class="asterisco">*</span></label>
+                <div class="radio-group-estilizado" style="flex-wrap: wrap;">
+                    <label class="radio-label"><input type="radio" name="perfil" value="gestor" required> Gestor de RPPS</label>
+                    <label class="radio-label"><input type="radio" name="perfil" value="contador"> Contador</label>                    
+                    <label class="radio-label"><input type="radio" name="perfil" value="prefeito"> Prefeito</label>
+                    <label class="radio-label"><input type="radio" name="perfil" value="outros"> Outros</label>
+                </div>
+
+                <fieldset id="gestor-perfil" class="bloco-condicional">
+                    <legend class="titulo-diagnostico">Interesse e Desafios</legend>
+                    <p class="label-branca" style="margin-bottom: 1rem; margin-top: 0;">O que busca melhorar no seu RPPS?</p>
+                    <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_gestor" value="demonstracao"> Agendar uma demonstração completa</label>
+                    <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_gestor" value="guias"> Automação no controle de guias</label>
+                    <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_gestor" value="tce"> Facilidade para gerar anexos do TCE-PE</label>
+                    <label class="radio-label"><input type="checkbox" name="motivo_gestor" value="orcamento"> Solicitar um orçamento</label>
+                </fieldset>
+
+                <fieldset id="parceiro-perfil" class="bloco-condicional">
+                     <legend class="titulo-diagnostico">Interesse Estratégico</legend>
+                     <p class="label-branca" style="margin-bottom: 1rem; margin-top: 0;">Qual é o seu principal objetivo?</p>
+                     <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_contador" value="clientes"> Otimizar serviços para meus clientes (RPPS)</label>
+                     <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_contador" value="parceria"> Proposta de parceria/representação</label>
+                     <label class="radio-label"><input type="checkbox" name="motivo_contador" value="conhecer"> Apenas conhecer a tecnologia</label>
+                </fieldset>
+
+                <fieldset id="prefeito-perfil" class="bloco-condicional">
+                     <legend class="titulo-diagnostico">Visão Executiva e Transparência</legend>
+                     <p class="label-branca" style="margin-bottom: 1rem; margin-top: 0;">Quais soluções você busca para sua gestão?</p>
+                     <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_prefeito" value="conhecer"> Conhecer a tecnologia</label>
+                     <label class="radio-label" style="margin-bottom: 0.8rem;"><input type="checkbox" name="motivo_prefeito" value="acompanhamento"> Verificar recursos para acompanhamento da gestão</label>
+                     <label class="radio-label"><input type="checkbox" name="motivo_prefeito" value="transparencia"> Dar mais transparência à população</label>
+                </fieldset>
+
+                <fieldset id="outros-perfil" class="bloco-condicional">
+                     <label for="especifique-outro" class="label-branca">Especifique seu perfil de atuação:</label>
+                     <input type="text" id="especifique-outro" name="especifique_outro" placeholder="Ex: Advogado Previdenciário...">
+                </fieldset>
+
+                <button type="submit" class="btn margem-top">Solicitar Demonstração</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="anoatual"></span> - SGINF-RPPS. Roberto Ferreira da Rocha. Todos os direitos reservados.</p>
+        <p id="ultimaModificacao"></p>
+        <p><a href="referencias.html">Página de Referências</a></p>
+    </footer>
+</body>
+</html>
