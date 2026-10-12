@@ -3,28 +3,37 @@
     --text-color: #e2e8f0;
     --accent-color: #06b6d4;
     --card-bg: rgba(10, 15, 28, 0.8);
-    --main-color:#e2e8f0;
+    --main-color: #e2e8f0;
     --text-color-main: #02214a;
 }
 
-body {
+/* Trava global de segurança contra scroll horizontal indesejado */
+html, body {
     font-family: Arial, sans-serif;
     background-color: var(--main-color);
     color: var(--text-color-main);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 main {
     flex: 1;
-    padding: 1.5rem;
+    padding: 1rem;
     width: 100%;
-    box-sizing: border-box; /* Fundamental: impede que o padding empurre a tela para fora */
-    overflow-x: hidden; /* Trava de segurança extra contra rolagem horizontal */
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
-/* --- Cabeçalho e Menu (Mobile) --- */
 header {
     display: flex;
     flex-wrap: wrap;
@@ -32,6 +41,7 @@ header {
     align-items: center;
     padding: 1rem;
     background-color: rgb(3, 6, 94);
+    width: 100%;
 }
 
 .logo {
@@ -55,7 +65,7 @@ nav {
 
 nav ul {
     list-style: none;
-    display: none; /* Escondido inicialmente */
+    display: none; 
     flex-direction: column;
     align-items: center;
     gap: 1rem;
@@ -80,20 +90,27 @@ nav a:hover, nav a.active {
     color: var(--accent-color);
 }
 
-/* --- Elementos Gerais --- */
-.hero { text-align: center; }
 /* --- Imagem Principal (Hero) na Página Inicial --- */
+.hero { 
+    text-align: center;
+    width: 100%;
+}
+
 .hero img {
     width: 100%;
-    max-height: 150px; /* Reduzido drasticamente para telas pequenas */
+    max-width: 100%;
+    max-height: 220px; /* Altura controlada para telemóveis */
     object-fit: cover; 
     object-position: center 20%; 
     border-radius: 8px;
-    margin: 1.5rem 0;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); 
-    box-sizing: border-box;
+    margin: 1rem 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); 
 }
-.titulo-centralizado { text-align: center; margin-bottom: 2rem; }
+
+.titulo-centralizado { 
+    text-align: center; 
+    margin-bottom: 2rem; 
+}
 
 .btn {
     display: inline-block;
@@ -109,12 +126,12 @@ nav a:hover, nav a.active {
     text-align: center;
 }
 
-/* --- Layout Empilhado (Mobile) --- */
 .grid-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.5rem;
     margin-top: 2rem;
+    width: 100%;
 }
 
 .institucional {
@@ -126,26 +143,26 @@ nav a:hover, nav a.active {
     background-color: var(--card-bg);
     border-radius: 12px;
     text-align: center;
+    width: 100%;
 }
 
 .institucional-texto h2 { color: var(--accent-color); margin-bottom: 1rem; font-size: 1.8rem; }
 .institucional-texto p { color: #ffffff; line-height: 1.6; margin-bottom: 1.5rem; }
-.institucional-texto ul { list-style: none; text-align: left; margin-bottom: 2rem; }
+.institucional-texto ul { list-style: none; text-align: left; margin-bottom: 2rem; padding: 0; }
 .institucional-texto li { color: #cbd5e1; margin-bottom: 1rem; line-height: 1.4; }
-.institucional-imagem img { border-radius: 8px; border: 1px solid #475569; }
+.institucional-imagem img { border-radius: 8px; border: 1px solid #475569; width: 100%; height: auto; object-fit: cover; }
 
-/* --- Cartões e Formulários --- */
 .card {
     background-color: var(--card-bg);
     padding: 1.5rem;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.1);
     color: #fff;
-    box-sizing: border-box; /* Impede que o padding do cartão o faça vazar da grade */
-    max-width: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
+
 .solucao-titulo { color: #10b981; margin: 0 0 0.5rem 0; }
 .solucao-texto { font-size: 0.95rem; color: #cbd5e1; }
 
@@ -156,9 +173,11 @@ nav a:hover, nav a.active {
     background-color: var(--card-bg);
     padding: 1.5rem;
     border-radius: 12px;
+    width: 100%;
 }
+
 .form-section form label { color: #ffffff; font-weight: bold; }
-input, select { padding: 0.8rem; border-radius: 4px; border: 1px solid #475569; background-color: #1e293b; color: #ffffff; }
+input, select { padding: 0.8rem; border-radius: 4px; border: 1px solid #475569; background-color: #1e293b; color: #ffffff; width: 100%; }
 
 .radio-group-estilizado { display: flex; flex-direction: column; gap: 1rem; margin-top: 0.5rem; }
 .radio-label { color: #e2e8f0; display: flex; align-items: center; gap: 0.5rem; }
@@ -167,7 +186,6 @@ input, select { padding: 0.8rem; border-radius: 4px; border: 1px solid #475569; 
 
 .mensagem-sucesso { background-color: rgba(16, 185, 129, 0.2); color: #10b981; border: 1px solid #10b981; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center; font-weight: bold; }
 
-/* --- Modal e Referências --- */
 .modal-estilizado {
     background-color: var(--card-bg);
     border: 1px solid var(--accent-color);
@@ -178,34 +196,33 @@ input, select { padding: 0.8rem; border-radius: 4px; border: 1px solid #475569; 
 }
 .modal-estilizado::backdrop { background-color: rgba(0, 0, 0, 0.7); }
 
-.ref-container { background-color: var(--card-bg); padding: 1.5rem; border-radius: 12px; }
+.ref-container { background-color: var(--card-bg); padding: 1.5rem; border-radius: 12px; width: 100%; }
 .ref-titulo-principal { color: var(--accent-color); text-align: center; }
 .ref-subtitulo { color: #10b981; margin-top: 1.5rem; }
 .ref-texto { color: #cbd5e1; line-height: 1.6; }
 
-/* --- Rodapé --- */
 footer {
     text-align: center;
     padding: 1.5rem;
     background-color: rgb(3, 6, 94); 
     font-size: 0.9rem;
     color: #ffffff;
+    width: 100%;
 }
 footer a { color: #ffffff; }
 footer a:hover { color: var(--accent-color); }
 
-/* --- Imagens dos Cartões de Solução --- */
 .card img {
     width: 100%;
-    height: 140px; /* Bem mais elegante e menor */
+    height: 140px;
     object-fit: cover; 
     object-position: center;
     border-radius: 8px; 
     margin-bottom: 1rem;
     border: 1px solid #475569;
-    box-sizing: border-box;
 }
 
 .btn-modal, .card .btn {
     margin-top: auto; 
 }
+.label-branca { color: #ffffff; }

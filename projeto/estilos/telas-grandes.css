@@ -1,16 +1,22 @@
 @media (min-width: 768px) {
-    main {
-        overflow-x: visible; /* Restaura o fluxo normal no desktop */
+    html, body {
+        overflow-x: visible; 
     }
 
-    /* --- Cabeçalho e Menu (Desktop) --- */
+    main {
+        padding: 2rem; 
+        max-width: 1200px; 
+        margin: 0 auto;
+        overflow-x: visible;
+    }
+
     header {
         flex-wrap: nowrap;
         padding: 1.5rem 3rem;
     }
 
     .hamburguer {
-        display: none; /* Esconde o botão hambúrguer */
+        display: none; 
     }
 
     nav {
@@ -18,14 +24,13 @@
     }
 
     nav ul {
-        display: flex; /* Exibe os links lado a lado */
+        display: flex; 
         flex-direction: row;
         background-color: transparent;
         padding: 0;
         margin-top: 0;
     }
 
-    /* --- Layout em Colunas (Desktop) --- */
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
@@ -62,12 +67,14 @@
         max-width: 500px;
     }
 
+    /* Ajuste elegante para a imagem Hero em telas grandes */
     .hero img {
-        max-height: 300px; /* Limite claro para desktop, impedindo que fique muito alta */
+        max-height: 320px; 
+        object-fit: cover;
+        object-position: center 20%;
     }
 
-    /* --- Ajuste das Imagens dos Cartões para Telas Grandes --- */
     .card img {
-        height: 160px; /* Levemente maior que no mobile, garantindo um visual de "vitrine" */
+        height: 160px; 
     }
 }
