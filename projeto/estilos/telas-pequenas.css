@@ -41,6 +41,7 @@ header {
     padding: 1rem;
     background-color: rgb(3, 6, 94);
     width: 100%;
+    color: #ffffff;
 }
 
 .logo {
@@ -255,4 +256,19 @@ footer a:hover { color: var(--accent-color); }
     margin-top: 0.5rem; 
     border: none; 
     padding: 0;
+}
+
+.form-section form label,
+.form-section form p,
+.bloco-condicional label,
+.bloco-condicional p,
+.radio-label {
+    color: #ffffff !important; 
+}
+
+.titulo-diagnostico {
+    color: var(--accent-color) !important; /* Ciano de alta visibilidade */
+    font-weight: bold;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 0.5rem;
 }
